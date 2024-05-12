@@ -9,13 +9,12 @@ export default {
         charactersArray: Array,
     }
 }
-
 </script>
 
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-3 px-6"  v-for="elem in charactersArray">
+            <div class="col-3 px-6" v-for="elem in charactersArray">
                 <CardsComponent :cardObject="elem" />
             </div>
         </div>
